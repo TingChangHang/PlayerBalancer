@@ -20,7 +20,7 @@ public class SectionServer extends BungeeServerInfo {
 
     public SectionServer(BalancerProps props, ServerSection section) {
         super(
-                "@" + section.getProps().getServerName(),
+                "pb_" + section.getProps().getServerName(),
                 new InetSocketAddress("0.0.0.0", (int) Math.floor(Math.random() * (0xFFFF + 1))),
                 "Section server of " + section.getName(),
                 false
